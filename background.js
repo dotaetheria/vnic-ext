@@ -1,7 +1,7 @@
 browser.webRequest.onBeforeRequest.addListener(
     function(details) {
       const url = details.url;
-      const mnPatterns = ['mn://', 'mn%3A%2F%2F', 'mn%3a%2f%2f'];
+      const mnPatterns = ['mn://', 'mn%3A%2F%2F', 'mn%3a%2f%2f', 'vn://', 'vn%3A%2F%2F', 'vn%3a%2f%2f'];
       
       for (let pattern of mnPatterns) {
         let index = url.indexOf(pattern);
