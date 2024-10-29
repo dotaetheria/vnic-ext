@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "priority": 100,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1.vnic.tech"
+      }
+    },
+    "condition": {
+      "regexFilter": ".*mn://([^/\\s&]+).*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 100,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1.vnic.tech"
+      }
+    },
+    "condition": {
+      "regexFilter": ".*mn%3A%2F%2F([^/\\s&]+).*",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

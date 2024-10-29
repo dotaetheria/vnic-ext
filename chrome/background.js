@@ -1,0 +1,1 @@
+console.log('MN Link Handler extension loaded');

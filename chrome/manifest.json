@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "MN Link Handler",
+    "version": "1.0",
+    "description": "Redirects mn:// links to vnic.tech",
+    
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+  
+    "host_permissions": [
+      "<all_urls>"
+    ],
+  
+    "background": {
+      "service_worker": "background.js"
+    },
+
+    "declarative_net_request": {
+      "rule_resources": [{
+        "id": "ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }]
+    }
+}
