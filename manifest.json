@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "MN Link Handler",
+    "version": "1.0",
+    "description": "Redirects mn:// links to vnic.tech",
+    
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking"
+    ],
+  
+    "host_permissions": [
+      "<all_urls>"
+    ],
+  
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
